@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obesity Research Hub</title>
+    <style>
+        :root {
+            --primary: #ff4757;
+            --secondary: #2f3542;
+            --accent: #ffa502;
+            --bg: #f1f2f6;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--secondary);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--secondary);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--primary);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--primary);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos') center/cover;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            height: 200px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #666;
+            font-size: 1.2rem;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        /* Mock Meme Image Placeholders */
+        .meme-1 { background: #ffeaa7; color: #d63031; font-family: 'Impact', sans-serif; font-size: 2rem; text-shadow: 2px 2px #000; }
+        .meme-2 { background: #fab1a0; color: #2d3436; font-family: Comic Sans MS, sans-serif; }
+        .meme-3 { background: #81ecec; color: #2d3436; font-weight: bold; }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>VERITY MEME OBESITY</h1>
+        <p>The Ultimate Digital Archives of Heavyweight Internet Culture</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#trends">Meme Trends</a>
+        <a href="#research">Data Analytics</a>
+        <a href="#about">About Verity</a>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <h2>Analyzing the Mass of Internet Humor</h2>
+            <p>Welcome to the premier database tracking the literal and figurative scaling of viral content across the web.</p>
+        </section>
+
+        <main class="grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-img meme-1">CHONK SCALE</div>
+                <div class="card-content">
+                    <h3>The Unit Timeline</h3>
+                    <p>Tracking the mathematical transition from " Heckin' Round" to "Oh Lawd He Comin'." A deep dive into absolute units.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-img meme-2">much weight. wow.</div>
+                <div class="card-content">
+                    <h3>Saturated Fats & Digital Formats</h3>
+                    <p>How compression artifacts and deep-frying algorithms make images look visually "heavy" and structurally dense.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-img meme-3">[Wide Putin Walking]</div>
+                <div class="card-content">
+                    <h3>Aspect Ratio Distortions</h3>
+                    <p>Verity analysis on why stretching videos horizontally to 16:9 creates instant comedic mass and gravitational pull.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Verity Meme Obesity Project. Built for comedic research purposes.</p>
+    </footer>
+
+</body>
+</html>
